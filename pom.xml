@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.janaldous</groupId>
-	<artifactId>minanamanila</artifactId>
+	<artifactId>minanamanila-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>minanamanila</name>
-	<description>Online ukay ukay</description>
+	<name>minanamanila-api</name>
+	<description>Online ukay ukay API</description>
 
 	<properties>
 		<java.version>1.8</java.version>
