@@ -5,7 +5,9 @@ services:
     image: 'minanamanila-api:latest'
     build:
       context: .
-    container_name: app
+    ports:
+      - "8080:8080"
+    container_name: minanamanila-api
     depends_on:
       - db
     environment:
@@ -13,10 +15,14 @@ services:
       - SPRING_DATASOURCE_USERNAME=compose-postgres
       - SPRING_DATASOURCE_PASSWORD=compose-postgres
       - SPRING_JPA_HIBERNATE_DDL_AUTO=none
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${CLIENT_SECRET}
           
   db:
     image: 'postgres:13.1-alpine'
-    container_name: db
+    container_name: minanamanila-db
+    ports:
+      - "5432:5432"
     environment:
       - POSTGRES_USER=compose-postgres
       - POSTGRES_PASSWORD=compose-postgres
