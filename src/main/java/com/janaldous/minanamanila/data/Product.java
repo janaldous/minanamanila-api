@@ -36,8 +36,12 @@ public class Product implements Serializable {
 	private String description;
 	
 	@Column(name = "unit_price")
-	@Min(value = 1, message="Please select at least one value")
+	@Min(value = 1, message = "Please select at least one value")
 	private BigDecimal unitPrice;
+	
+	@Column(name = "unit_price")
+	@Min(value = 1, message = "Please select at least one value")
+	private BigDecimal srp;
 	
 	@NotBlank(message = "Please enter the brand name")
 	private String brand;
