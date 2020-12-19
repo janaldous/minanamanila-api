@@ -1,0 +1,63 @@
+brand,name,color,srp,discount,lbd,lead_time,warranty
+Apple,APPLE MacBook Air M1 8GB 256GB - Gold,Gold,54990,1000,53990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Air M1 8GB 256GB - Silver,Silver,54990,1000,53990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Air M1 8GB 256GB - Space Gray,Space Gray,54990,1000,53990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Air M1 8GB 512GB - Gold,Gold,68990,1000,67990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Air M1 8GB 512GB - Silver,Silver,68990,1000,67990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Air M1 8GB 512GB - Space Gray,Space Gray,68990,1000,67990,Limited Stock,1 Yr Apple
+Apple,APPLE MacBook Pro M1 8GB 256GB - Space Gray,Space Gray,71990,1000,70990,Limited Stock,1 Yr Apple
+Apple,APPLE MacBook Pro M1 8GB 256GB - Silver,Silver,71990,1000,70990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Pro M1 8GB 512GB - Space Gray,Space Gray,83990,1000,82990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Pro M1 8GB 512GB - Silver,Silver,83990,1000,82990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Mini M1 8GB 256GB - Space Gray,Space Gray,37990,1000,36990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Mini M1 8GB 512GB - Space Gray,Space Gray,49990,1000,48990,7- 14 Days,1 Yr Apple
+Apple,APPLE MacBook Air 2017 128GB - Silver,Silver,39500,1000,38500,Limited Stock,1 Yr Apple
+Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MWTJ2ZP/A) 256GB",Space Gray,48900,1000,47900,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MWTK2ZP/A) 256GB",Silver,48900,1000,47900,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MWTL2ZP/A) 256GB",Gold,48900,1000,47900,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MVH22ZP/A) 512GB",Space Gray,63500,1000,62500,Limited Stock,1 Yr Apple
+Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MVH42ZP/A) 512GB",Silver,63500,1000,62500,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MVH52ZP/A) 512GB",Gold,63500,1000,62500,Limited Stock,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 1.4GHZ (MXK32ZP/A) 256GB with Touch Bar",Space Gray,63500,1000,62500,Limited Stock,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 1.4GHZ ( MXK62ZP/A) 256GB with Touch Bar",Silver,63500,1000,62500,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 1.4GHZ (MXK52ZP/A) 512GB with Touch Bar",Space Gray,77500,1000,76500,Limited Stock,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 1.4GHZ (MXK72ZP/A) 512GB with Touch Bar",Silver,77500,1000,76500,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 2.0GHZ (MWP42ZP/A) 512GB with Touch Bar",Space Gray,92000,1000,91000,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 2.0GHZ (MWP72ZP/A) 512GB with Touch Bar",Silver,92000,1000,91000,7- 14 Days,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 2.0GHZ (MWP52ZP/A) 1TB with Touch Bar",Space Gray,101000,1000,100000,Limited Stock,1 Yr Apple
+Apple,"APPLE MacBook Pro (2020) 13"" 2.0GHZ (MWP82ZP/A) 1TB with Touch Bar",Silver,101000,1000,100000,7- 14 Days,1 Yr Apple
+Apple,APPLE iPhone SE 2020 - 64GB  (Dual Sim E-Sim + Nano),"Red, Black, White",23500,300,23200,7- 14 Days,1 Yr Service
+Apple,APPLE iPhone SE 2020 - 128GB  (Dual Sim E-Sim + Nano),"Red, Black, White",26500,300,26200,7- 14 Days,1 Yr Service
+Apple,APPLE iPhone SE 2020 - 256GB  (Dual Sim E-Sim + Nano),"Red, Black, White",34000,300,33700,7- 14 Days,1 Yr Service
+Apple,APPLE iPad Air 3 WiFi 2019 (64GB),"Space Gray, Gold",24500,300,24200,Limited Stock,1 Yr Apple
+Apple,APPLE iPad Air 3 WiFi 2019 (256GB),Space Gray,31500,300,31200,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Air 4 WiFi 2020 (64GB),Silver,33990,300,33690,Limited Stock,1 Yr Apple
+Apple,APPLE iPad Air 4 WiFi 2020 (256GB),Green,42990,300,42690,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Mini 5 2019 WiFi 256GB (5th Gen),"Space Gray, Gold",24400,300,24100,7- 14 Days,1 Yr Apple
+Apple,"APPLE iPad Pro 11"" (2020) WiFi 128GB (2nd Gen)","Silver, Space Gray",41800,500,41300,Limited Stock,1 Yr Apple
+Apple,"APPLE iPad Pro 11"" (2020) WiFi 256GB (2nd Gen)","Silver, Space Gray",45900,500,45400,Limited Stock,1 Yr Apple
+Apple,"APPLE iPad Pro 11"" (2020) WiFi 512GB (2nd Gen)","Silver, Space Gray",58900,500,58400,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pro 11'' (2020) WiFi 1TB (2nd Gen),"Silver, Space Gray",70000,500,69500,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pro 11'' (2020) WiFi + Cellular 128GB (2nd Gen),"Silver, Space Gray",50000,500,49500,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pro 11'' (2020) WiFi + Cellular 256 GB (2nd Gen),"Silver, Space Gray",57000,500,56500,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pro 11'' (2020) WiFi + Cellular 512GB (2nd Gen),"Silver, Space Gray",70000,500,69500,Limited Stock,1 Yr Apple
+Apple,APPLE iPad Pro 11'' (2020) WiFi + Cellular 1TB (2nd Gen),"Silver, Space Gray",80000,500,79500,Limited Stock,1 Yr Apple
+Apple,"APPLE iPad Pro 12.9"" (2020) WiFi 128GB (4th Gen)","Silver, Space Gray",49900,500,49400,Limited Stock,1 Yr Apple
+Apple,"APPLE iPad Pro 12.9"" (2020) WiFi 256GB (4th Gen)","Silver, Space Gray",55000,500,54500,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pro 12.9'' (2020) WiFi 512GB (4th Gen),"Silver, Space Gray",74500,500,74000,7- 14 Days,1 Yr Apple
+Apple,"APPLE iPad Pro 12.9"" (2020) WiFi 1TB (4th Gen)","Silver, Space Gray",79000,500,78500,Limited Stock,1 Yr Apple
+Apple,APPLE iPad Pro 12.9'' (2020) WiFi + Cellular 128GB (4th Gen),"Silver, Space Gray",62000,500,61500,Limited Stock,1 Yr Apple
+Apple,APPLE iPad Pro 12.9'' (2020) WiFi + Cellular 256GB (4th Gen),"Silver, Space Gray",68000,500,67500,Limited Stock,1 Yr Apple
+Apple,APPLE iPad Pro 12.9'' (2020) WiFi + Cellular 512GB (4th Gen),"Silver, Space Gray",78000,500,77500,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pro 12.9'' (2020) WiFi + Cellular 1TB (4th Gen),"Silver, Space Gray",78000,500,77500,Limited Stock,1 Yr Apple
+Apple,APPLE AirPods with Charging Case (MV7N2) White,White,7900,100,7800,Limited Stock,1 Yr Apple
+Apple,APPLE AirPods 2 MRXJ2 with Wireless Charging Case - White,White,9900,200,9700,No Stock,1 Yr Apple
+Apple,APPLE Aipods Pro MWP22 - White,White,11900,200,11700,7- 14 Days,1 Yr Apple
+Apple,APPLE iPad Pencil (1st Gen),White,5800,100,5700,Limited Stock,1 Yr Apple
+Apple,APPLE Pencil (2nd Gen),White,7900,100,7800,Limited Stock,1 Yr Apple
+Apple,APPLE Smart Keyboard 2020 - IPAD PRO 11'',Black,9900,100,9800,Limited Stock,1 Yr Apple
+Apple,"APPLE Smart Keyboard 2020 - IPAD PRO 12.9 """,Black,10900,200,10700,Limited Stock,1 Yr Apple
+Apple,Apple Magic Mouse 2 MLA02ZA/A -  Silver,Silver,4400,100,4300,7- 14 Days,1 Yr Apple
+Apple,APPLE TV 4K 64GB MP7P2ZP/A,Black,11500,200,11300,Limited Stock,1 Yr Apple
+Apple,APPLE Watch Series 3 38mm - Silver,Silver,10900,200,10700,Limited Stock,1 Yr Apple
+Apple,APPLE Watch Series 3 42mm - Space Gray,Space Gray,12700,200,12500,Limited Stock,1 Yr Apple

@@ -1,0 +1,44 @@
+#APPLE	iPhone	12	Pro	Max	(256GB) Graphite,	Silver,	
+#Gold,	Pacific	Blue
+#74,000														 500													 73,500																 Limited	Stock 1	Yr	Service
+#APPLE	iPhone	12	Pro	Max	(512GB) Graphite,	Silver,	
+#Gold,	Pacific	Blue
+#83,000														 500													 82,500																 Limited	Stock 1	Yr	Service
+APPLE	iPad	Air	3	WIFI	2019	(64GB) Space	Gray,	Gold 24,500														 300													 24,200																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Air	3	WIFI	2019	(256GB) Space	Gray 31,500														 300													 31,200																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Air	4	WIFI	2020	(64GB) Silver 33,990														 300													 33,690																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Air	4	WIFI	2020	(256GB) Green 42,990														 300													 42,690																 7-	14	Days 1	Yr	Apple
+#APPLE	iPad	Mini	5	2019	WIFI	64GB	(5th	Gen)	
+#Silver,	Space	Gray,	
+#Gold 19,400														 300													 19,100																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Mini	5	2019	WIFI	256GB	(5th	Gen) Space	Gray,	Gold 24,400														 300													 24,100																 7-	14	Days 1	Yr	Apple
+#APPLE	iPad	2020	10.2	WIFI	32GB	(8th	Gen)
+#Silver,	Space	Gray,	
+#Gold 18,100														 200													 17,900																 Limited	Stock 1	Yr	Apple
+#APPLE	iPad	2020	10.2	WIFI	128GB	(8th	Gen)
+#Silver,	Space	Gray,	
+#Gold 23,300														 200													 23,100																 Limited	Stock 1	Yr	Apple
+#APPLE	iPad	2020	10.2	WIFI	+	Cellular	128GB	(8th	Gen)	
+#Silver,	Space	Gray,	
+#Gold 32,500														 200													 32,300																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	11"	(2020)	WIFI	128GB	(2nd	Gen) Silver,	Space	Gray 41,800														 500													 41,300																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	11"	(2020)	WIFI	256GB	(2nd	Gen) Silver,	Space	Gray 45,900														 500													 45,400																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	11"	(2020)	WIFI	512GB	(2nd	Gen) Silver,	Space	Gray 58,900														 500													 58,400																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	11''	(2020)	WIFI	1TB	(2nd	Gen) Silver,	Space	Gray 70,000														 500													 69,500																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	11''	(2020)	WIFI	+	Cellular	128GB	(2nd	Gen) Silver,	Space	Gray 50,000														 500													 49,500																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	11''	(2020)	WIFI	+	Cellular	256	GB	(2nd	Gen) Silver,	Space	Gray 57,000														 500													 56,500																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	11''	(2020)	WIFI	+	Cellular	512GB	(2nd	Gen) Silver,	Space	Gray 70,000														 500													 69,500																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	11''	(2020)	WIFI	+	Cellular	1TB	(2nd	Gen) Silver,	Space	Gray 80,000														 500													 79,500																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	12.9"	(2020)	WIFI	128GB	(4th	Gen) Silver,	Space	Gray 49,900														 500													 49,400																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	12.9"	(2020)	WIFI	256GB	(4th	Gen) Silver,	Space	Gray 55,000														 500													 54,500																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	12.9''	(2020)	WIFI	512GB	(4th	Gen) Silver,	Space	Gray 74,500														 500													 74,000																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	12.9"	(2020)	WIFI	1TB	(4th	Gen) Silver,	Space	Gray 79,000														 500													 78,500																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	12.9''	(2020)	WIFI	+	Cellular	128GB	(4th	Gen) Silver,	Space	Gray 62,000														 500													 61,500																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	12.9''	(2020)	WIFI	+	Cellular	256GB	(4th	Gen) Silver,	Space	Gray 68,000														 500													 67,500																 Limited	Stock 1	Yr	Apple
+APPLE	iPad	Pro	12.9''	(2020)	WIFI	+	Cellular	512GB	(4th	Gen) Silver,	Space	Gray 78,000														 500													 77,500																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pro	12.9''	(2020)	WIFI	+	Cellular	1TB	(4th	Gen) Silver,	Space	Gray 78,000														 500													 77,500																 Limited	Stock 1	Yr	Apple
+APPLE	Airpods	with	Charging	Case	(MV7N2)	White White 7,900																 100													 7,800																		 Limited	Stock 1	Yr	Apple
+APPLE	Airpods	2	MRXJ2	with	Wireless	Charging	Case	-	White White 9,900																 200													 9,700																		 No	Stock 1	Yr	Apple
+APPLE	Aipods	Pro	MWP22	-	White White 11,900														 200													 11,700																 7-	14	Days 1	Yr	Apple
+APPLE	iPad	Pencil	(1st	Gen) White 5,800																 100													 5,700																		 Limited	Stock 1	Yr	Apple
+APPLE	Pencil	(2nd	Gen)	 White 7,900																 100													 7,800																		 Limited	Stock 1	Yr	Apple

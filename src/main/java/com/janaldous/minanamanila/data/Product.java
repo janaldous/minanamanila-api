@@ -39,7 +39,7 @@ public class Product implements Serializable {
 	@Min(value = 1, message = "Please select at least one value")
 	private BigDecimal unitPrice;
 	
-	@Column(name = "unit_price")
+	@Column(name = "srp")
 	@Min(value = 1, message = "Please select at least one value")
 	private BigDecimal srp;
 	

@@ -26,3 +26,4 @@ Database change log could be generated with the liquibase maven plugin.
 ```
 liquibase:generateChangeLog
 ```
+Make sure to set database credentials in `liquibase.properties`

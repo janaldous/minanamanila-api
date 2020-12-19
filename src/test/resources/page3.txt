@@ -1,0 +1,30 @@
+APPLE	Smart	Keyboard	2020	-	IPAD	PRO	11''	 Black 9,900																 100													 9,800																		 Limited	Stock 1	Yr	Apple
+APPLE	Smart	Keyboard	2020	-	IPAD	PRO	12.9	" Black 10,900														 200													 10,700																 Limited	Stock 1	Yr	Apple
+Apple	Magic	Mouse	2	MLA02ZA/A	-		Silver Silver 4,400																 100													 4,300																		 7-	14	Days 1	Yr	Apple
+APPLE	TV	4K	64GB	MP7P2ZP/A Black 11,500														 200													 11,300																 Limited	Stock 1	Yr	Apple
+APPLE	Watch	Series	3	38mm	-	Silver Silver 10,900.00									 200													 10,700																 Limited	Stock 1	Yr	Apple
+APPLE	Watch	Series	3	42mm	-	Space	Gray Space	Gray 12,700.00									 200													 12,500																 Limited	Stock 1	Yr	Apple
+#APPLE	Watch	Series	SE	GPS	40mm	Gold	Aluminum	Case	w/	Sport	Band	(Pink)	
+#MYDN2ZP/A
+#Pink 15,990.00									 200													 15,790																 7-	14	Days 1	Yr	Apple
+#APPLE	Watch	Series	SE	GPS	40mm	Space	Gray	Aluminum	Case	w/	Sport	Band	
+#(Black)	MYDP2ZP/A
+#Black 15,990.00									 200													 15,790																 7-	14	Days 1	Yr	Apple
+#APPLE	Watch	Series	SE	GPS	44mm	Silver	Aluminum	Case	with	Sport	Band	
+#(White)	MYDQ2ZP/A
+#White 17,990.00									 200													 17,790																 Limited	Stock 1	Yr	Apple
+#APPLE	Watch	Series	SE	GPS	44mm	Space	Gray	Aluminum	Case	with	Sport	Band	
+#(Black)	MYDT2ZP/A
+#Black 17,990.00									 200													 17,790																 Limited	Stock 1	Yr	Apple
+#APPLE	Watch	Series	SE	GPS	44mm	Space	Gray	Aluminum	Case	NikeBand	
+#(Anthracite/Black)	MYYK2ZP/A
+#Anthracite/Black 17,990.00									 200													 17,790																 7-	14	Days 1	Yr	Apple
+#APPLE	Watch	Series	6	GPS	40mm	Gold	Aluminum	Case	Sportband	(Pink)	
+#MG123ZP/A
+#Pink 22,990.00									 200													 22,790																 7-	14	Days 1	Yr	Apple
+#APPLE	Watch	Series	6	GPS	44mm	Gold	Aluminum	Case	with	Sportband	(Pink)	
+#M00E3ZP/A
+#Pink 24,990.00									 200													 24,790																 7-	14	Days 1	Yr	Apple
+#APPLE	Watch	Series	6	GPS	40mm	Space	Gray	Aluminum	Case	Sportband	(Black)	
+#MG133ZP/A
+#Black 22,990.00									 200													 22,790																 Limited	Stock 1	Yr	Apple

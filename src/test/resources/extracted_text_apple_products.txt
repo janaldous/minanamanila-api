@@ -1,0 +1,64 @@
+APPLE	Macbook	Air	M1	8GB	256GB	-	Gold Gold 54,990														 1,000										 53,990																 7-	14	Days 1	Yr	Apple
+APPLE	Macbook	Air	M1	8GB	256GB	-	Silver Silver 54,990														 1,000										 53,990																 7-	14	Days 1	Yr	Apple
+APPLE	Macbook	Air	M1	8GB	256GB	-	Space	Gray Space	Gray 54,990														 1,000										 53,990																 7-	14	Days 1	Yr	Apple
+APPLE	Macbook	Air	M1	8GB	512GB	-	Gold Gold 68,990														 1,000										 67,990																 7-	14	Days 1	Yr	Apple
+APPLE	Macbook	Air	M1	8GB	512GB	-	Silver Silver 68,990														 1,000										 67,990																 7-	14	Days 1	Yr	Apple
+APPLE	Macbook	Air	M1	8GB	512GB	-	Space	Gray Space	Gray 68,990														 1,000										 67,990																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Pro	M1	8GB	256GB	-	Space	Gray Space	Gray 71,990														 1,000										 70,990																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Pro	M1	8GB	256GB	-	Silver Silver 71,990														 1,000										 70,990																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Pro	M1	8GB	512GB	-	Space	Gray Space	Gray 83,990														 1,000										 82,990																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Pro	M1	8GB	512GB	-	Silver Silver 83,990														 1,000										 82,990																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Mini	M1	8GB	256GB	-	Space	Gray Space	Gray 37,990														 1,000										 36,990																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Mini	M1	8GB	512GB	-	Space	Gray Space	Gray 49,990														 1,000										 48,990																 7-	14	Days 1	Yr	Apple
+APPLE	Macbook	Air	2017	128GB	-	Silver Silver 39,500														 1,000										 38,500																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Air	(2020)	13"	1.1GHZ	(MWTJ2ZP/A)	256GB Space	Gray 48,900														 1,000										 47,900																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Air	(2020)	13"	1.1GHZ	(MWTK2ZP/A)	256GB	 Silver 48,900														 1,000										 47,900																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Air	(2020)	13"	1.1GHZ	(MWTL2ZP/A)	256GB Gold 48,900														 1,000										 47,900																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Air	(2020)	13"	1.1GHZ	(MVH22ZP/A)	512GB	 Space	Gray 63,500														 1,000										 62,500																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Air	(2020)	13"	1.1GHZ	(MVH42ZP/A)	512GB Silver 63,500														 1,000										 62,500																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Air	(2020)	13"	1.1GHZ	(MVH52ZP/A)	512GB	 Gold 63,500														 1,000										 62,500																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	1.4GHZ	(MXK32ZP/A)	256GB	with	Touchbar Space	Gray 63,500														 1,000										 62,500																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	1.4GHZ	(	MXK62ZP/A)	256GB	with	Touchbar	 Silver 63,500														 1,000										 62,500																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	1.4GHZ	(MXK52ZP/A)	512GB	with	Touchbar Space	Gray 77,500														 1,000										 76,500																 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	1.4GHZ	(MXK72ZP/A)	512GB	with	Touchbar Silver 77,500														 1,000										 76,500																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	2.0GHZ	(MWP42ZP/A)	512GB	with	Touchbar Space	Gray 92,000														 1,000										 91,000																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	2.0GHZ	(MWP72ZP/A)	512GB	with	Touchbar	 Silver 92,000														 1,000										 91,000																 7-	14	Days 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	2.0GHZ	(MWP52ZP/A)	1TB	with	Touchbar	 Space	Gray 101,000												 1,000										 100,000														 Limited	Stock 1	Yr	Apple
+APPLE	MacBook	Pro	(2020)	13"	2.0GHZ	(MWP82ZP/A)	1TB	with	Touchbar	 Silver 101,000												 1,000										 100,000														 7-	14	Days 1	Yr	Apple
+#APPLE	iMac	(2020)	27"	3.1GHz	6-Core	Processor	with	Turbo	Boost	up	to	
+#4.5GHz	(MXWT2ZP/A)	-	256GB	Retina	5K	Display Red,	Black,	White 101,000												 1,000										 100,000														 ETA	December 1	Yr	Service
+#APPLE	iMac	(2020)	27"	3.3GHz	6-Core	Processor	with	Turbo	Boost	up	to	
+#4.8GHz	(MXWU2ZP/A)	-	512GB	Retina	5K	Display Red,	Black,	White 113,000												 1,000										 112,000														 ETA	December 1	Yr	Service
+#APPLE	iMac	(2020)	27"	3.8GHz	8-Core	Processor	with	Turbo	Boost	up	to	
+#5.0GHz	(MXWV2ZP/A)	-	512GB	Retina	5K	Display Red,	Black,	White 131,000												 1,000										 130,000														 ETA	December 1	Yr	Service
+APPLE	iPhone	SE	2020	-	64GB		(Dual	Sim	E-Sim	+	Nano) Red,	Black,	White 23,500														 300													 23,200																 7-	14	Days 1	Yr	Service
+APPLE	iPhone	SE	2020	-	128GB		(Dual	Sim	E-Sim	+	Nano) Red,	Black,	White 26,500														 300													 26,200																 7-	14	Days 1	Yr	Service
+APPLE	iPhone	SE	2020	-	256GB		(Dual	Sim	E-Sim	+	Nano) Red,	Black,	White 34,000														 300													 33,700																 7-	14	Days 1	Yr	Service
+#APPLE	iPhone	11	(64GB)
+#Black,	White,	
+#Purple,	Green 34,300														 300													 34,000																 7-	14	Days 1	Yr	Service
+#APPLE	iPhone	11	(128GB)
+#Black,	White,	
+#Purple,	Green 36,400														 300													 36,100																 Limited	Stock 1	Yr	Service
+#APPLE	iPhone	11	(256GB)
+#Black,	White,	
+#Purple,	Green 43,500														 300													 43,200																 7-	14	Days 1	Yr	Service
+#APPLE	iPhone	12	(64GB)	HK
+#Black,	Green,	Blue,	
+#White 45,000														 500													 44,500																 Limited	Stock 1	Yr	Service
+#APPLE	iPhone	12	(128GB)	HK
+#Black,	Green,	Blue,	
+#White 47,500														 500													 47,000																 Limited	Stock 1	Yr	Service
+#APPLE	iPhone	12	(256GB)	HK
+#Black,	Green,	Blue,	
+#White 53,000														 500													 52,500																 7-	14	Days 1	Yr	Service
+#APPLE		iPhone	12	Mini	(64GB)
+#Black,	White,	Blue,	
+#Green,	Red 42,000														 300													 41,700																 7-	14	Days 1	Yr	Service
+#APPLE		iPhone	12	Mini	(128GB)
+#Black,	White,	Blue,	
+#Green,	Red 45,000														 300													 44,700																 7-	14	Days 1	Yr	Service
+#APPLE		iPhone	12	Mini	(256GB)
+#Black,	White,	Blue,	
+#Green,	Red 51,990														 500													 51,490																 7-	14	Days 1	Yr	Service
+#SALE 
