@@ -15,6 +15,8 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
+import org.hibernate.annotations.Type;
+
 import lombok.Data;
 
 @Entity
@@ -51,6 +53,7 @@ public class Product implements Serializable {
     private Set<Category> categories;
 	
 	@Lob
+	@Type(type = "org.hibernate.type.BinaryType")
 	private byte[] photo;
 	
 }

@@ -1,7 +1,7 @@
 databaseChangeLog:
 - changeSet:
-    id: 1608222859984-1
-    author: janaldous (generated)
+    id: 1609262336141-1
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -43,8 +43,8 @@ databaseChangeLog:
             type: INTEGER
         tableName: order_detail
 - changeSet:
-    id: 1608222859984-2
-    author: janaldous (generated)
+    id: 1609262336141-2
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -72,8 +72,8 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: user_detail
 - changeSet:
-    id: 1608222859984-3
-    author: janaldous (generated)
+    id: 1609262336141-3
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -93,8 +93,8 @@ databaseChangeLog:
             type: BIGINT
         tableName: product_categories
 - changeSet:
-    id: 1608222859984-4
-    author: janaldous (generated)
+    id: 1609262336141-4
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -110,8 +110,21 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: category
 - changeSet:
-    id: 1608222859984-5
-    author: janaldous (generated)
+    id: 1609262336141-5
+    author: USER (generated)
+    changes:
+    - createSequence:
+        cacheSize: 1
+        cycle: false
+        dataType: bigint
+        incrementBy: 1
+        maxValue: 9223372036854775807
+        minValue: 1
+        sequenceName: hibernate_sequence
+        startValue: 1
+- changeSet:
+    id: 1609262336141-6
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -151,30 +164,17 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: address
 - changeSet:
-    id: 1608222859984-21
-    author: janaldous (generated)
-    changes:
-    - createSequence:
-        cacheSize: 1
-        cycle: false
-        dataType: bigint
-        incrementBy: 1
-        maxValue: 9223372036854775807
-        minValue: 1
-        sequenceName: hibernate_sequence
-        startValue: 1
-- changeSet:
-    id: 1608222859984-6
-    author: janaldous (generated)
+    id: 1609262336141-7
+    author: USER (generated)
     changes:
     - createTable:
         columns:
         - column:
+            autoIncrement: true
             constraints:
               nullable: false
               primaryKey: true
               primaryKeyName: product_pkey
-            defaultValueSequenceNext: hibernate_sequence
             name: id
             type: BIGINT
         - column:
@@ -195,10 +195,13 @@ databaseChangeLog:
         - column:
             name: unit_price
             type: numeric(19, 2)
+        - column:
+            name: photo
+            type: BYTEA
         tableName: product
 - changeSet:
-    id: 1608222859984-7
-    author: janaldous (generated)
+    id: 1609262336141-8
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -228,8 +231,8 @@ databaseChangeLog:
             type: BIGINT
         tableName: order_item
 - changeSet:
-    id: 1608222859984-8
-    author: janaldous (generated)
+    id: 1609262336141-9
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -251,8 +254,8 @@ databaseChangeLog:
             type: BIGINT
         tableName: order_tracking
 - changeSet:
-    id: 1608222859984-9
-    author: janaldous (generated)
+    id: 1609262336141-10
+    author: USER (generated)
     changes:
     - createTable:
         columns:
@@ -271,8 +274,8 @@ databaseChangeLog:
             type: INTEGER
         tableName: delivery_date
 - changeSet:
-    id: 1608222859984-10
-    author: janaldous (generated)
+    id: 1609262336141-11
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: categories_id
@@ -286,8 +289,8 @@ databaseChangeLog:
         referencedTableName: category
         validate: true
 - changeSet:
-    id: 1608222859984-11
-    author: janaldous (generated)
+    id: 1609262336141-12
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: billing_id
@@ -301,8 +304,8 @@ databaseChangeLog:
         referencedTableName: address
         validate: true
 - changeSet:
-    id: 1608222859984-12
-    author: janaldous (generated)
+    id: 1609262336141-13
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: shipping_id
@@ -316,8 +319,8 @@ databaseChangeLog:
         referencedTableName: address
         validate: true
 - changeSet:
-    id: 1608222859984-13
-    author: janaldous (generated)
+    id: 1609262336141-14
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: product_id
@@ -331,8 +334,8 @@ databaseChangeLog:
         referencedTableName: product
         validate: true
 - changeSet:
-    id: 1608222859984-14
-    author: janaldous (generated)
+    id: 1609262336141-15
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: order_id
@@ -346,8 +349,8 @@ databaseChangeLog:
         referencedTableName: order_detail
         validate: true
 - changeSet:
-    id: 1608222859984-15
-    author: janaldous (generated)
+    id: 1609262336141-16
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: order_id
@@ -361,8 +364,8 @@ databaseChangeLog:
         referencedTableName: order_detail
         validate: true
 - changeSet:
-    id: 1608222859984-16
-    author: janaldous (generated)
+    id: 1609262336141-17
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: delivery_date
@@ -376,16 +379,16 @@ databaseChangeLog:
         referencedTableName: delivery_date
         validate: true
 - changeSet:
-    id: 1608222859984-17
-    author: janaldous (generated)
+    id: 1609262336141-18
+    author: USER (generated)
     changes:
     - addUniqueConstraint:
         columnNames: delivery_date
         constraintName: uk_9os9cxvm17g2boovhnuse8dvg
         tableName: delivery_date
 - changeSet:
-    id: 1608222859984-18
-    author: janaldous (generated)
+    id: 1609262336141-19
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: user_id
@@ -399,8 +402,8 @@ databaseChangeLog:
         referencedTableName: user_detail
         validate: true
 - changeSet:
-    id: 1608222859984-19
-    author: janaldous (generated)
+    id: 1609262336141-20
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: tracking_id
@@ -414,8 +417,8 @@ databaseChangeLog:
         referencedTableName: order_tracking
         validate: true
 - changeSet:
-    id: 1608222859984-20
-    author: janaldous (generated)
+    id: 1609262336141-21
+    author: USER (generated)
     changes:
     - addForeignKeyConstraint:
         baseColumnNames: products_id
@@ -473,3 +476,14 @@ databaseChangeLog:
        relativeToChangelogFile:  true 
        separator: ','
        tableName: product
+- changeSet:
+    id: product-1
+    author: janaldous
+    changes:
+    - update:
+       tableName: product
+       columns:
+       - column:
+          name: photo
+          valueBlobFile: "pic/macbook-air-space-gray-select-201810.jfif"
+       where: name = 'APPLE MacBook Air M1 8GB 256GB - Gold'
