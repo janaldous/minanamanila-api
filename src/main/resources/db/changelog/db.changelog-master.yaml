@@ -486,4 +486,4 @@ databaseChangeLog:
        - column:
           name: photo
           valueBlobFile: "pic/macbook-air-space-gray-select-201810.jfif"
-       where: name = 'APPLE MacBook Air M1 8GB 256GB - Gold'
+       where: name='APPLE MacBook Air M1 8GB 256GB - Gold'

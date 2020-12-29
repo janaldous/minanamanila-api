@@ -16,7 +16,7 @@ public class ProductService {
 	
 	@Autowired
 	private ProductRepository productRepository;
-
+	
 	public Page<Product> getProducts(int page, int size) {
 		Pageable pageRequest = PageRequest.of(page, size);
 		return productRepository.findAll(pageRequest);
@@ -25,5 +25,5 @@ public class ProductService {
 	public Optional<Product> getProduct(Long id) {
 		return productRepository.findById(id);
 	}
-
+	
 }

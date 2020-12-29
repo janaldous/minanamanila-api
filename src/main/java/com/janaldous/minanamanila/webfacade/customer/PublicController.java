@@ -7,6 +7,7 @@ import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +27,7 @@ import com.janaldous.minanamanila.service.ProductService;
 import com.janaldous.minanamanila.service.ResourceNotFoundException;
 import com.janaldous.minanamanila.webfacade.dto.OrderConfirmation;
 import com.janaldous.minanamanila.webfacade.dto.OrderDto;
+import com.janaldous.minanamanila.webfacade.dto.ProductSimpleDto;
 
 import io.swagger.annotations.Api;
 
@@ -68,9 +70,18 @@ public class PublicController {
 	}
 
 	@GetMapping("/products/{id}")
-	public @ResponseBody ResponseEntity<Product> getProduct(@PathVariable Long id) {
+	public @ResponseBody ResponseEntity<ProductSimpleDto> getProduct(@PathVariable Long id) {
 		return productService.getProduct(id)
-				.map(ResponseEntity::ok)
+				.map(product -> ResponseEntity.ok(ProductSimpleDto.builder().id(product.getId()).code(product.getCode())
+						.description(product.getDescription()).name(product.getName()).unitPrice(product.getUnitPrice())
+						.srp(product.getSrp()).categories(product.getCategories()).build()))
 				.orElseGet(() -> ResponseEntity.notFound().build());
 	}
+
+	@GetMapping(value = "/products/photo/{id}", produces = MediaType.IMAGE_JPEG_VALUE)
+	public @ResponseBody ResponseEntity<byte[]> getProductPhoto(@PathVariable Long id) {
+		return productService.getProduct(id).map(product -> ResponseEntity.ok(product.getPhoto()))
+				.orElseGet(() -> ResponseEntity.notFound().build());
+	}
+
 }
