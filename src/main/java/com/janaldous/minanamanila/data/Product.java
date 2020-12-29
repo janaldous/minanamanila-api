@@ -10,6 +10,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -48,5 +49,8 @@ public class Product implements Serializable {
 	
 	@ManyToMany(cascade = { CascadeType.ALL })
     private Set<Category> categories;
+	
+	@Lob
+	private byte[] photo;
 	
 }
