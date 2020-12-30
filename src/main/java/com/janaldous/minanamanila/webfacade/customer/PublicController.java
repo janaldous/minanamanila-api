@@ -1,6 +1,7 @@
 package com.janaldous.minanamanila.webfacade.customer;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.validation.Valid;
 
@@ -20,7 +21,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.janaldous.minanamanila.data.DeliveryDate;
-import com.janaldous.minanamanila.data.Product;
 import com.janaldous.minanamanila.service.DeliveryDateService;
 import com.janaldous.minanamanila.service.OrderService;
 import com.janaldous.minanamanila.service.ProductService;
@@ -28,8 +28,10 @@ import com.janaldous.minanamanila.service.ResourceNotFoundException;
 import com.janaldous.minanamanila.webfacade.dto.OrderConfirmation;
 import com.janaldous.minanamanila.webfacade.dto.OrderDto;
 import com.janaldous.minanamanila.webfacade.dto.ProductSimpleDto;
+import com.janaldous.minanamanila.webfacade.mapper.ProductMapper;
 
 import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
 @Api
 @RestController
@@ -45,6 +47,9 @@ public class PublicController {
 
 	@Autowired
 	private ProductService productService;
+	
+	@Autowired
+	private ProductMapper productMapper;
 
 	@GetMapping("/delivery")
 	public @ResponseBody List<DeliveryDate> getDeliveryDates(@RequestParam("page") int page,
@@ -65,16 +70,16 @@ public class PublicController {
 	}
 
 	@GetMapping("/products")
-	public @ResponseBody List<Product> getProducts(@RequestParam("page") int page, @RequestParam("size") int size) {
-		return productService.getProducts(page, size).getContent();
+	public @ResponseBody List<ProductSimpleDto> getProducts(@RequestParam("page") int page, @RequestParam("size") int size) {
+		return productService.getProducts(page, size).getContent().stream()
+				.map(product -> productMapper.toProductSimpleDto(product))
+				.collect(Collectors.toList());
 	}
 
 	@GetMapping("/products/{id}")
 	public @ResponseBody ResponseEntity<ProductSimpleDto> getProduct(@PathVariable Long id) {
 		return productService.getProduct(id)
-				.map(product -> ResponseEntity.ok(ProductSimpleDto.builder().id(product.getId()).code(product.getCode())
-						.description(product.getDescription()).name(product.getName()).unitPrice(product.getUnitPrice())
-						.srp(product.getSrp()).categories(product.getCategories()).build()))
+				.map(product -> ResponseEntity.ok(productMapper.toProductSimpleDto(product)))
 				.orElseGet(() -> ResponseEntity.notFound().build());
 	}
 
@@ -82,6 +87,14 @@ public class PublicController {
 	public @ResponseBody ResponseEntity<byte[]> getProductPhoto(@PathVariable Long id) {
 		return productService.getProduct(id).map(product -> ResponseEntity.ok(product.getPhoto()))
 				.orElseGet(() -> ResponseEntity.notFound().build());
+	}
+
+	@ApiOperation(value = "Get product suggestions for a particular product")
+	@GetMapping("/products/suggestions")
+	public @ResponseBody List<ProductSimpleDto> getProductSuggestions(@RequestParam Long id) {
+		return productService.getProducts(0, 6).getContent().stream()
+				.map(product -> productMapper.toProductSimpleDto(product))
+				.collect(Collectors.toList());
 	}
 
 }
