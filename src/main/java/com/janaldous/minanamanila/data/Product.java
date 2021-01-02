@@ -10,12 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Lob;
 import javax.persistence.ManyToMany;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
-
-import org.hibernate.annotations.Type;
 
 import lombok.Data;
 
@@ -52,8 +49,10 @@ public class Product implements Serializable {
 	@ManyToMany(cascade = { CascadeType.ALL })
     private Set<Category> categories;
 	
-	@Lob
-	@Type(type = "org.hibernate.type.BinaryType")
-	private byte[] photo;
+	@Column(name = "picture_url")
+	private String picutreUrl;
+	
+	@ManyToMany(cascade = { CascadeType.ALL })
+    private Set<ProductColor> colors;
 	
 }

@@ -20,5 +20,6 @@ public class ProductSimpleDto {
 	private BigDecimal srp;
 	private String brand;
 	private Set<Category> categories;
+	private String imageURL;
 
 }

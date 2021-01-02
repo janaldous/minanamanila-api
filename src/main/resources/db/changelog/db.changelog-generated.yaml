@@ -1,6 +1,6 @@
 databaseChangeLog:
 - changeSet:
-    id: 1609262336141-1
+    id: 1609601726001-1
     author: USER (generated)
     changes:
     - createTable:
@@ -43,7 +43,7 @@ databaseChangeLog:
             type: INTEGER
         tableName: order_detail
 - changeSet:
-    id: 1609262336141-2
+    id: 1609601726001-2
     author: USER (generated)
     changes:
     - createTable:
@@ -72,7 +72,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: user_detail
 - changeSet:
-    id: 1609262336141-3
+    id: 1609601726001-3
     author: USER (generated)
     changes:
     - createTable:
@@ -93,7 +93,7 @@ databaseChangeLog:
             type: BIGINT
         tableName: product_categories
 - changeSet:
-    id: 1609262336141-4
+    id: 1609601726001-4
     author: USER (generated)
     changes:
     - createTable:
@@ -110,20 +110,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: category
 - changeSet:
-    id: 1609262336141-5
-    author: USER (generated)
-    changes:
-    - createSequence:
-        cacheSize: 1
-        cycle: false
-        dataType: bigint
-        incrementBy: 1
-        maxValue: 9223372036854775807
-        minValue: 1
-        sequenceName: hibernate_sequence
-        startValue: 1
-- changeSet:
-    id: 1609262336141-6
+    id: 1609601726001-5
     author: USER (generated)
     changes:
     - createTable:
@@ -164,13 +151,12 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: address
 - changeSet:
-    id: 1609262336141-7
+    id: 1609601726001-6
     author: USER (generated)
     changes:
     - createTable:
         columns:
         - column:
-            autoIncrement: true
             constraints:
               nullable: false
               primaryKey: true
@@ -190,17 +176,17 @@ databaseChangeLog:
             name: name
             type: VARCHAR(255)
         - column:
+            name: picture_url
+            type: VARCHAR(255)
+        - column:
             name: srp
             type: numeric(19, 2)
         - column:
             name: unit_price
             type: numeric(19, 2)
-        - column:
-            name: picture_url
-            type: VARCHAR(255)
         tableName: product
 - changeSet:
-    id: 1609262336141-8
+    id: 1609601726001-7
     author: USER (generated)
     changes:
     - createTable:
@@ -231,7 +217,7 @@ databaseChangeLog:
             type: BIGINT
         tableName: order_item
 - changeSet:
-    id: 1609262336141-9
+    id: 1609601726001-8
     author: USER (generated)
     changes:
     - createTable:
@@ -254,7 +240,7 @@ databaseChangeLog:
             type: BIGINT
         tableName: order_tracking
 - changeSet:
-    id: 1609262336141-10
+    id: 1609601726001-9
     author: USER (generated)
     changes:
     - createTable:
@@ -274,7 +260,7 @@ databaseChangeLog:
             type: INTEGER
         tableName: delivery_date
 - changeSet:
-    id: 1609262336141-11
+    id: 1609601726001-10
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -289,7 +275,7 @@ databaseChangeLog:
         referencedTableName: category
         validate: true
 - changeSet:
-    id: 1609262336141-12
+    id: 1609601726001-11
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -304,7 +290,7 @@ databaseChangeLog:
         referencedTableName: address
         validate: true
 - changeSet:
-    id: 1609262336141-13
+    id: 1609601726001-12
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -319,7 +305,7 @@ databaseChangeLog:
         referencedTableName: address
         validate: true
 - changeSet:
-    id: 1609262336141-14
+    id: 1609601726001-13
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -334,7 +320,7 @@ databaseChangeLog:
         referencedTableName: product
         validate: true
 - changeSet:
-    id: 1609262336141-15
+    id: 1609601726001-14
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -349,7 +335,7 @@ databaseChangeLog:
         referencedTableName: order_detail
         validate: true
 - changeSet:
-    id: 1609262336141-16
+    id: 1609601726001-15
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -364,7 +350,7 @@ databaseChangeLog:
         referencedTableName: order_detail
         validate: true
 - changeSet:
-    id: 1609262336141-17
+    id: 1609601726001-16
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -379,7 +365,7 @@ databaseChangeLog:
         referencedTableName: delivery_date
         validate: true
 - changeSet:
-    id: 1609262336141-18
+    id: 1609601726001-17
     author: USER (generated)
     changes:
     - addUniqueConstraint:
@@ -387,7 +373,7 @@ databaseChangeLog:
         constraintName: uk_9os9cxvm17g2boovhnuse8dvg
         tableName: delivery_date
 - changeSet:
-    id: 1609262336141-19
+    id: 1609601726001-18
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -402,7 +388,7 @@ databaseChangeLog:
         referencedTableName: user_detail
         validate: true
 - changeSet:
-    id: 1609262336141-20
+    id: 1609601726001-19
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -417,7 +403,7 @@ databaseChangeLog:
         referencedTableName: order_tracking
         validate: true
 - changeSet:
-    id: 1609262336141-21
+    id: 1609601726001-20
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -432,51 +418,16 @@ databaseChangeLog:
         referencedTableName: product
         validate: true
 - changeSet:
-    id: product-csv
-    author: janaldous
+    id: 1609601726001-21
+    author: USER (generated)
     changes:
-    - loadData:
-       columns:
-        - column:
-           name: id
-           valueSequenceNext: hibernate_sequence
-        - column:
-           header: brand
-           name: brand
-           type: STRING        
-        - column:
-           header: name
-           name: name
-           type: STRING
-        - column:
-           header: color
-           name: description
-           type: STRING
-        - column:
-           header: srp
-           name: srp
-           type: NUMERIC
-        - column:
-           header: discount
-           type: SKIP
-        - column:
-           header: lbd
-           name: unit_price
-           type: NUMERIC
-        - column:
-           header: lead_time
-           type: skip
-        - column:
-           header: warranty
-           type: skip
-        - column:
-           header: url
-           name: picture_url
-           type: STRING
-       commentLineStartsWith: '#'
-       encoding:  UTF-8
-       file:  csv/apple_products.csv
-       quotchar:  '"'
-       relativeToChangelogFile:  true 
-       separator: ','
-       tableName: product
+    - createSequence:
+        cacheSize: 1
+        cycle: false
+        dataType: bigint
+        incrementBy: 1
+        maxValue: 9223372036854775807
+        minValue: 1
+        sequenceName: hibernate_sequence
+        startValue: 1
+
