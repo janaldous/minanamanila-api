@@ -1,17 +1,11 @@
 brand,name,color,srp,discount,lbd,lead_time,warranty,url
-Apple,APPLE MacBook Air M1 8GB 256GB - Gold,Gold,54990,1000,53990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
-Apple,APPLE MacBook Air M1 8GB 256GB - Silver,Silver,54990,1000,53990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
-Apple,APPLE MacBook Air M1 8GB 256GB - Space Gray,Space Gray,54990,1000,53990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
-Apple,APPLE MacBook Air M1 8GB 512GB - Gold,Gold,68990,1000,67990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
-Apple,APPLE MacBook Air M1 8GB 512GB - Silver,Silver,68990,1000,67990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
-Apple,APPLE MacBook Air M1 8GB 512GB - Space Gray,Space Gray,68990,1000,67990,Limited Stock,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
-Apple,APPLE MacBook Pro M1 8GB 256GB - Space Gray,Space Gray,71990,1000,70990,Limited Stock,1 Yr Apple,mbp-spacegray-select-202011.jfif
-Apple,APPLE MacBook Pro M1 8GB 256GB - Silver,Silver,71990,1000,70990,7- 14 Days,1 Yr Apple,mbp-spacegray-select-202011.jfif
-Apple,APPLE MacBook Pro M1 8GB 512GB - Space Gray,Space Gray,83990,1000,82990,7- 14 Days,1 Yr Apple,mbp-spacegray-select-202011.jfif
-Apple,APPLE MacBook Pro M1 8GB 512GB - Silver,Silver,83990,1000,82990,7- 14 Days,1 Yr Apple,mbp-spacegray-select-202011.jfif
-Apple,APPLE Mac Mini M1 8GB 256GB - Space Gray,Space Gray,37990,1000,36990,7- 14 Days,1 Yr Apple,mac-mini-hero-202011.jfif
-Apple,APPLE Mac Mini M1 8GB 512GB - Space Gray,Space Gray,49990,1000,48990,7- 14 Days,1 Yr Apple,mac-mini-hero-202011.jfif
-Apple,APPLE MacBook Air 2017 128GB - Silver,Silver,39500,1000,38500,Limited Stock,1 Yr Apple,
+Apple,APPLE MacBook Air M1 8GB 256GB,"Gold, Silver, Space Gray",54990,1000,53990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
+Apple,APPLE MacBook Air M1 8GB 512GB,"Gold, Silver, Space Gray",68990,1000,67990,7- 14 Days,1 Yr Apple,macbook-air-space-gray-select-201810.jfif
+Apple,APPLE MacBook Pro M1 8GB 256GB,"Space Gray, Silver",71990,1000,70990,Limited Stock,1 Yr Apple,mbp-spacegray-select-202011.jfif
+Apple,APPLE MacBook Pro M1 8GB 512GB,"Space Gray, Silver",83990,1000,82990,7- 14 Days,1 Yr Apple,mbp-spacegray-select-202011.jfif
+Apple,APPLE Mac Mini M1 8GB 256GB,Space Gray,37990,1000,36990,7- 14 Days,1 Yr Apple,mac-mini-hero-202011.jfif
+Apple,APPLE Mac Mini M1 8GB 512GB,Space Gray,49990,1000,48990,7- 14 Days,1 Yr Apple,mac-mini-hero-202011.jfif
+Apple,APPLE MacBook Air 2017 128GB,Silver,39500,1000,38500,Limited Stock,1 Yr Apple,
 Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MWTJ2ZP/A) 256GB",Space Gray,48900,1000,47900,7- 14 Days,1 Yr Apple,
 Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MWTK2ZP/A) 256GB",Silver,48900,1000,47900,7- 14 Days,1 Yr Apple,
 Apple,"APPLE MacBook Air (2020) 13"" 1.1GHZ (MWTL2ZP/A) 256GB",Gold,48900,1000,47900,7- 14 Days,1 Yr Apple,

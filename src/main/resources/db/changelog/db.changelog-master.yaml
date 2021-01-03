@@ -1,6 +1,48 @@
 databaseChangeLog:
 - changeSet:
-    id: 1609262336141-1
+    id: 1609665988995-1
+    author: USER (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: product_colors_pkey
+            name: products_id
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: product_colors_pkey
+            name: colors_id
+            type: BIGINT
+        tableName: product_colors
+- changeSet:
+    id: 1609665988995-2
+    author: USER (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: product_color_products_pkey
+            name: product_color_id
+            type: BIGINT
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: product_color_products_pkey
+            name: products_id
+            type: BIGINT
+        tableName: product_color_products
+- changeSet:
+    id: 1609665988995-3
     author: USER (generated)
     changes:
     - createTable:
@@ -43,7 +85,7 @@ databaseChangeLog:
             type: INTEGER
         tableName: order_detail
 - changeSet:
-    id: 1609262336141-2
+    id: 1609665988995-4
     author: USER (generated)
     changes:
     - createTable:
@@ -72,7 +114,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: user_detail
 - changeSet:
-    id: 1609262336141-3
+    id: 1609665988995-5
     author: USER (generated)
     changes:
     - createTable:
@@ -93,7 +135,7 @@ databaseChangeLog:
             type: BIGINT
         tableName: product_categories
 - changeSet:
-    id: 1609262336141-4
+    id: 1609665988995-6
     author: USER (generated)
     changes:
     - createTable:
@@ -110,20 +152,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: category
 - changeSet:
-    id: 1609262336141-5
-    author: USER (generated)
-    changes:
-    - createSequence:
-        cacheSize: 1
-        cycle: false
-        dataType: bigint
-        incrementBy: 1
-        maxValue: 9223372036854775807
-        minValue: 1
-        sequenceName: hibernate_sequence
-        startValue: 1
-- changeSet:
-    id: 1609262336141-6
+    id: 1609665988995-7
     author: USER (generated)
     changes:
     - createTable:
@@ -164,7 +193,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: address
 - changeSet:
-    id: 1609262336141-7
+    id: 1609665988995-8
     author: USER (generated)
     changes:
     - createTable:
@@ -200,7 +229,7 @@ databaseChangeLog:
             type: VARCHAR(255)
         tableName: product
 - changeSet:
-    id: 1609262336141-8
+    id: 1609665988995-9
     author: USER (generated)
     changes:
     - createTable:
@@ -231,7 +260,7 @@ databaseChangeLog:
             type: BIGINT
         tableName: order_item
 - changeSet:
-    id: 1609262336141-9
+    id: 1609665988995-10
     author: USER (generated)
     changes:
     - createTable:
@@ -254,7 +283,7 @@ databaseChangeLog:
             type: BIGINT
         tableName: order_tracking
 - changeSet:
-    id: 1609262336141-10
+    id: 1609665988995-11
     author: USER (generated)
     changes:
     - createTable:
@@ -274,7 +303,27 @@ databaseChangeLog:
             type: INTEGER
         tableName: delivery_date
 - changeSet:
-    id: 1609262336141-11
+    id: 1609665988995-12
+    author: USER (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: product_color_pkey
+            name: id
+            type: BIGINT
+        - column:
+            name: color
+            type: VARCHAR(255)
+        - column:
+            name: product_code
+            type: VARCHAR(255)
+        tableName: product_color
+- changeSet:
+    id: 1609665988995-13
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -289,7 +338,7 @@ databaseChangeLog:
         referencedTableName: category
         validate: true
 - changeSet:
-    id: 1609262336141-12
+    id: 1609665988995-14
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -304,7 +353,7 @@ databaseChangeLog:
         referencedTableName: address
         validate: true
 - changeSet:
-    id: 1609262336141-13
+    id: 1609665988995-15
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -319,7 +368,7 @@ databaseChangeLog:
         referencedTableName: address
         validate: true
 - changeSet:
-    id: 1609262336141-14
+    id: 1609665988995-16
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -334,7 +383,7 @@ databaseChangeLog:
         referencedTableName: product
         validate: true
 - changeSet:
-    id: 1609262336141-15
+    id: 1609665988995-17
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -349,7 +398,7 @@ databaseChangeLog:
         referencedTableName: order_detail
         validate: true
 - changeSet:
-    id: 1609262336141-16
+    id: 1609665988995-18
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -364,7 +413,7 @@ databaseChangeLog:
         referencedTableName: order_detail
         validate: true
 - changeSet:
-    id: 1609262336141-17
+    id: 1609665988995-19
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -379,7 +428,7 @@ databaseChangeLog:
         referencedTableName: delivery_date
         validate: true
 - changeSet:
-    id: 1609262336141-18
+    id: 1609665988995-20
     author: USER (generated)
     changes:
     - addUniqueConstraint:
@@ -387,7 +436,67 @@ databaseChangeLog:
         constraintName: uk_9os9cxvm17g2boovhnuse8dvg
         tableName: delivery_date
 - changeSet:
-    id: 1609262336141-19
+    id: 1609665988995-21
+    author: USER (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: colors_id
+        baseTableName: product_colors
+        constraintName: fke1kwy2m1ytoxls9xgfhm7fo9o
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: id
+        referencedTableName: product_color
+        validate: true
+- changeSet:
+    id: 1609665988995-22
+    author: USER (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: products_id
+        baseTableName: product_colors
+        constraintName: fkqk0ut28hc8aj8p1km6r0cyx7x
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: id
+        referencedTableName: product
+        validate: true
+- changeSet:
+    id: 1609665988995-23
+    author: USER (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: products_id
+        baseTableName: product_color_products
+        constraintName: fk802duvs1nq9dju4r11gyu63fs
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: id
+        referencedTableName: product
+        validate: true
+- changeSet:
+    id: 1609665988995-24
+    author: USER (generated)
+    changes:
+    - addForeignKeyConstraint:
+        baseColumnNames: product_color_id
+        baseTableName: product_color_products
+        constraintName: fkc38d8a9gyikw934m6kuh8m9v8
+        deferrable: false
+        initiallyDeferred: false
+        onDelete: NO ACTION
+        onUpdate: NO ACTION
+        referencedColumnNames: id
+        referencedTableName: product_color
+        validate: true
+- changeSet:
+    id: 1609665988995-25
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -402,7 +511,7 @@ databaseChangeLog:
         referencedTableName: user_detail
         validate: true
 - changeSet:
-    id: 1609262336141-20
+    id: 1609665988995-26
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -417,7 +526,7 @@ databaseChangeLog:
         referencedTableName: order_tracking
         validate: true
 - changeSet:
-    id: 1609262336141-21
+    id: 1609665988995-27
     author: USER (generated)
     changes:
     - addForeignKeyConstraint:
@@ -431,6 +540,19 @@ databaseChangeLog:
         referencedColumnNames: id
         referencedTableName: product
         validate: true
+- changeSet:
+    id: 1609665988995-28
+    author: USER (generated)
+    changes:
+    - createSequence:
+        cacheSize: 1
+        cycle: false
+        dataType: bigint
+        incrementBy: 1
+        maxValue: 9223372036854775807
+        minValue: 1
+        sequenceName: hibernate_sequence
+        startValue: 1
 - changeSet:
     id: product-csv
     author: janaldous
@@ -480,3 +602,6 @@ databaseChangeLog:
        relativeToChangelogFile:  true 
        separator: ','
        tableName: product
+- include:
+    file: "scripts/colors.sql"
+    relativeToChangelogFile: true

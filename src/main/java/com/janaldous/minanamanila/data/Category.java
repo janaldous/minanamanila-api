@@ -18,6 +18,6 @@ public class Category {
 	@NotBlank(message = "Please enter a category name")
 	private String name;
 	
-	@ManyToMany(mappedBy = "categories")
-    private Set<Product> products;
+//	@ManyToMany(mappedBy = "categories")
+//    private Set<Product> products;
 }
