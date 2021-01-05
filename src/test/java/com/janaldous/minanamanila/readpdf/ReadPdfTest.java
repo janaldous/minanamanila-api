@@ -13,6 +13,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.text.PDFTextStripper;
 import org.apache.pdfbox.text.PDFTextStripperByArea;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import com.opencsv.exceptions.CsvDataTypeMismatchException;
@@ -74,6 +75,7 @@ public class ReadPdfTest {
         System.out.println(textForRegion);
 	}
 	
+	@Disabled
 	@Test
 	public void convertTextToApplePdfProductObjects() throws IOException, CsvDataTypeMismatchException, CsvRequiredFieldEmptyException {
 //		String filename = "extracted_text_apple_products.txt";

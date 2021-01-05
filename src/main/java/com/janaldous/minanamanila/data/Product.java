@@ -14,8 +14,6 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
-import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
 import lombok.Data;
@@ -50,14 +48,14 @@ public class Product implements Serializable {
 	@NotBlank(message = "Please enter the brand name")
 	private String brand;
 
-//	@ManyToMany(cascade = { CascadeType.ALL })
-//	private Set<Category> categories;
+	@ManyToMany(cascade = { CascadeType.ALL })
+	private Set<Category> categories;
 	
 	@ManyToMany(cascade = { CascadeType.ALL })
 	@JsonSerialize(using = ColorSetSerializer.class)
 	private Set<ProductColor> colors;
 
 	@Column(name = "picture_url")
-	private String picutreUrl;
+	private String pictureUrl;
 
 }

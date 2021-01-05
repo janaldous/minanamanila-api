@@ -16,9 +16,9 @@ class PdfReaderTest {
 
 		assertEquals("APPLE Macbook Air M1 8GB 256GB - Gold", output.getName());
 		assertEquals("Gold", output.getColor());
-		assertEquals("54,990", output.getSrp());
-		assertEquals("1,000", output.getDiscount());
-		assertEquals("53,990", output.getLbd());
+		assertEquals("54990", output.getSrp().toString());
+		assertEquals("1000", output.getDiscount().toString());
+		assertEquals("53990", output.getLbd().toString());
 		assertEquals("7- 14 Days", output.getLeadTime());
 		assertEquals("1 Yr Apple", output.getWarranty());
 	}

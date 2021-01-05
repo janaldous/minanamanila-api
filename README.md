@@ -15,7 +15,7 @@ docker-compose build && docker-compose up
 
 ## How to execute commands on the database app
 ```
-winpty docker exec -it <container id> bash
+winpty docker exec -it <container id> psql -U <psql username> -W <psql password> <psql database name>
 ```
 
 (Exclude winpty in non-windows OS)
