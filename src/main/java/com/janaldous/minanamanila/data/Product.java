@@ -14,6 +14,8 @@ import javax.persistence.ManyToMany;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
 import lombok.Data;
 
 @Entity
@@ -21,32 +23,39 @@ import lombok.Data;
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
-	
+
 	private String code;
-	
+
 	@NotBlank(message = "Please enter the product name")
 	private String name;
-	
+
 	/** Description can also include product model information **/
 	@NotBlank(message = "Please enter the description")
 	private String description;
-	
+
 	@Column(name = "unit_price")
 	@Min(value = 1, message = "Please select at least one value")
 	private BigDecimal unitPrice;
-	
+
 	@Column(name = "srp")
 	@Min(value = 1, message = "Please select at least one value")
 	private BigDecimal srp;
-	
+
 	@NotBlank(message = "Please enter the brand name")
 	private String brand;
+
+	@ManyToMany(cascade = { CascadeType.ALL })
+	private Set<Category> categories;
 	
 	@ManyToMany(cascade = { CascadeType.ALL })
-    private Set<Category> categories;
-	
+	@JsonSerialize(using = ColorSetSerializer.class)
+	private Set<ProductColor> colors;
+
+	@Column(name = "picture_url")
+	private String pictureUrl;
+
 }

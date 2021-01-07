@@ -33,4 +33,4 @@ build/
 .DS_Store
 .mvn/
 .env
-src/main/docker/minanamanila-api-0.0.1-SNAPSHOT.jar
+src/main/docker/*.jar
