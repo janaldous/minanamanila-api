@@ -64,5 +64,5 @@ public class Product implements Serializable {
 	@Column(name = "picture_url")
 	@NotNull
 	private String pictureUrl;
-
+	
 }

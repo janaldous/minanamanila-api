@@ -8,7 +8,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -18,11 +17,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.data.domain.PageRequest;
 
 import com.janaldous.minanamanila.data.AddressRepository;
-import com.janaldous.minanamanila.data.DeliveryDate;
-import com.janaldous.minanamanila.data.DeliveryDateRepository;
 import com.janaldous.minanamanila.data.OrderDetail;
 import com.janaldous.minanamanila.data.OrderItemRepository;
 import com.janaldous.minanamanila.data.OrderRepository;
@@ -59,9 +55,6 @@ class OrderServiceIT {
 	@Autowired
 	private OrderItemRepository orderItemRepository;
 
-	@Autowired
-	private DeliveryDateRepository deliveryDateRepository;
-
 	private static boolean isDBInitialized = false;
 
 	@Autowired
@@ -81,16 +74,10 @@ class OrderServiceIT {
 	}
 
 	private void initializeDB() {
-		// add available delivery date
-		DeliveryDate deliveryDate = new DeliveryDate();
-		deliveryDate.setDate(TestUtils.convertLocalDateToDate(LocalDate.now().plusDays(1)));
-		deliveryDate.setOrderLimit(11);
-		DeliveryDate savedDeliveryDate = deliveryDateRepository.save(deliveryDate);
-
 		// add orders
 		for (int i = 0; i < 10; i++) {
 			OrderDetail mockOrder = mockOrderDetail();
-			mockOrder.setDeliveryDate(savedDeliveryDate);
+			mockOrder.setDeliveryDate(new Date());
 			if (i % 2 == 1)
 				mockOrder.getTracking().setStatus(OrderStatus.DELIVERED);
 			else
@@ -113,7 +100,6 @@ class OrderServiceIT {
 		addressRepository.deleteAll();
 		orderItemRepository.deleteAll();
 		orderTrackingRepository.deleteAll();
-		deliveryDateRepository.deleteAll();
 		isDBInitialized = false;
 	}
 
@@ -123,7 +109,6 @@ class OrderServiceIT {
 		assertEquals(10, userRepository.count());
 		
 		OrderDto input = getMockOrder();
-		input.setDeliveryDateId(deliveryDateRepository.findAll(PageRequest.of(0, 1)).getContent().get(0).getId());
 		orderService.order(input);
 
 		assertEquals(11, orderRepository.count());
@@ -139,29 +124,10 @@ class OrderServiceIT {
 	@Test
 	void testCreateOrderInvalidDeliveryDate() {
 		OrderDto input = getMockOrder();
-		input.setDeliveryDateId(0l);
 
 		assertThrows(ResourceNotFoundException.class, () -> orderService.order(input));
 		assertEquals(10, userRepository.count());
 		assertEquals(0, addressRepository.count());
-	}
-
-	@Test
-	void testCreateOrderInvalidDeliveryDateExceededLimit() {
-		DeliveryDate deliveryDate = new DeliveryDate();
-		deliveryDate.setDate(TestUtils.convertLocalDateToDate(LocalDate.now().plusDays(2)));
-		deliveryDate.setOrderLimit(1);
-		deliveryDate = deliveryDateRepository.save(deliveryDate);
-
-		OrderDto input = getMockOrder();
-		input.setDeliveryDateId(deliveryDate.getId());
-
-		orderService.order(input);
-
-		assertThrows(OrderException.class, () -> orderService.order(input));
-
-		// clean up
-		dbCleanUp();
 	}
 
 	@Test

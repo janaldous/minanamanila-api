@@ -4,11 +4,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-import java.util.Date;
-
 import org.junit.jupiter.api.Test;
 
-import com.janaldous.minanamanila.data.DeliveryDate;
 import com.janaldous.minanamanila.data.OrderDetail;
 import com.janaldous.minanamanila.data.OrderStatus;
 import com.janaldous.minanamanila.data.OrderTracking;
@@ -27,7 +24,7 @@ class OrderConfirmationMapperTest {
 		assertNotNull(result.getUser());
 		assertEquals(input.getUser().getContactNumber(), result.getUser().getContactNumber());
 		assertEquals(OrderStatus.REGISTERED, result.getOrderStatus());
-		assertEquals(input.getDeliveryDate().getDate(), result.getDeliveryDate());
+		assertEquals(input.getDeliveryDate(), result.getDeliveryDate());
 	}
 	
 	private OrderDetail getMockOrderDto() {
@@ -43,11 +40,7 @@ class OrderConfirmationMapperTest {
 		tracking.setStatus(OrderStatus.REGISTERED);
 		input.setTracking(tracking);
 		input.setUser(user);
-		DeliveryDate deliveryDate = new DeliveryDate();
-		deliveryDate.setDate(new Date());
-		deliveryDate.setId(1123l);
-		deliveryDate.setOrderLimit(6);
-		input.setDeliveryDate(deliveryDate );
+		input.setDeliveryDate(null);
 		
 		return input;
 	}

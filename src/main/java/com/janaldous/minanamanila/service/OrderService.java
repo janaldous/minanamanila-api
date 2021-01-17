@@ -14,7 +14,6 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.janaldous.minanamanila.data.AddressRepository;
-import com.janaldous.minanamanila.data.DeliveryDate;
 import com.janaldous.minanamanila.data.OrderDetail;
 import com.janaldous.minanamanila.data.OrderItem;
 import com.janaldous.minanamanila.data.OrderRepository;
@@ -47,9 +46,6 @@ public class OrderService {
 	private OrderTrackingRepository orderTrackingRepository;
 
 	@Autowired
-	private DeliveryDateService deliveryDateService;
-
-	@Autowired
 	private ProductRepository productRepository;
 
 	@Autowired
@@ -59,13 +55,6 @@ public class OrderService {
 	public OrderConfirmation order(OrderDto orderDto) {
 		OrderDetail orderDetail = OrderMapper.toEntity(orderDto);
 		orderDetail.setOrderDate(new Date());
-
-		if (!deliveryDateService.isDeliveryDateAvailable(orderDto.getDeliveryDateId()))
-			throw new OrderException("Order limit exeeded");
-
-		// set delivery date
-		DeliveryDate deliveryDate = deliveryDateService.getDeliveryDate(orderDto.getDeliveryDateId());
-		orderDetail.setDeliveryDate(deliveryDate);
 
 		// set products
 		List<OrderItem> orderItems = orderDto.getProducts().stream().map(productDto -> {
@@ -89,6 +78,7 @@ public class OrderService {
 		tracking.setStatus(OrderStatus.REGISTERED);
 		orderTrackingRepository.save(tracking);
 		orderDetail.setTracking(tracking);
+		orderDetail.setDeliveryDate(orderDto.getDeliveryDate());
 
 		OrderDetail savedOrder = orderRepository.save(orderDetail);
 

@@ -15,9 +15,7 @@ public class OrderConfirmationMapper {
 		output.setOrderNumber(input.getId());
 		output.setUser(UserMapper.toDto(input.getUser()));
 		output.setOrderStatus(input.getTracking().getStatus());
-		if (input.getDeliveryDate() != null) {
-			output.setDeliveryDate(input.getDeliveryDate().getDate());
-		}
+		output.setDeliveryDate(input.getDeliveryDate());
 
 		return output;
 	}

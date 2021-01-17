@@ -1,5 +1,6 @@
 package com.janaldous.minanamanila.webfacade.dto;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -28,7 +29,7 @@ public class OrderDto {
 	private DeliveryType deliveryType;
 	
 	@NotNull
-	private Long deliveryDateId;
+	private Date deliveryDate;
 
 	@NotNull
 	private AddressDto address;
