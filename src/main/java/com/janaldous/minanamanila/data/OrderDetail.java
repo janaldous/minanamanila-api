@@ -55,9 +55,8 @@ public class OrderDetail {
 	@Column(name = "order_date")
 	private Date orderDate;
 	
-	@ManyToOne
-	@JoinColumn(name = "delivery_date", nullable = false, updatable = false)
-	private DeliveryDate deliveryDate;
+	@Column(name = "delivery_date")
+	private Date deliveryDate;
 	
 	@OneToOne
 	private OrderTracking tracking;

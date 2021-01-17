@@ -5,15 +5,14 @@ import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.math.BigDecimal;
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
-import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
@@ -22,7 +21,6 @@ import org.mockito.Spy;
 import org.springframework.data.domain.Sort;
 
 import com.janaldous.minanamanila.data.AddressRepository;
-import com.janaldous.minanamanila.data.DeliveryDate;
 import com.janaldous.minanamanila.data.DeliveryType;
 import com.janaldous.minanamanila.data.OrderDetail;
 import com.janaldous.minanamanila.data.OrderItem;
@@ -37,7 +35,6 @@ import com.janaldous.minanamanila.data.User;
 import com.janaldous.minanamanila.data.UserRepository;
 import com.janaldous.minanamanila.domain.mapper.OrderItemMapper;
 import com.janaldous.minanamanila.testutil.ProductDtoMockFactory;
-import com.janaldous.minanamanila.testutil.TestUtils;
 import com.janaldous.minanamanila.webfacade.dto.AddressDto;
 import com.janaldous.minanamanila.webfacade.dto.OrderConfirmation;
 import com.janaldous.minanamanila.webfacade.dto.OrderDto;
@@ -61,9 +58,6 @@ class OrderServiceTest {
 	@Mock
 	private OrderTrackingRepository orderTrackingRepository;
 	
-	@Mock
-	private DeliveryDateService deliveryDateService;
-	
 	@Spy
 	private OrderItemMapper orderItemMapper = new OrderItemMapper();
 
@@ -86,7 +80,7 @@ class OrderServiceTest {
 		orderDto.setDeliveryType(DeliveryType.DELIVER);
 		orderDto.setPaymentType(PaymentType.CASH);
 		orderDto.setProducts(ProductDtoMockFactory.getMockProducts());
-		orderDto.setDeliveryDateId(1l);
+		orderDto.setDeliveryDate(new Date());
 		UserDto user = new UserDto();
 		user.setContactNumber("1234567890");
 		orderDto.setUser(user);
@@ -95,13 +89,6 @@ class OrderServiceTest {
 		Mockito.when(mockBananaBread.getUnitPrice()).thenReturn(BigDecimal.valueOf(165));
 		Mockito.when(productRepository.findById(991l)).thenReturn(Optional.of(mockBananaBread));
 
-		DeliveryDate mockDeliveryDate = new DeliveryDate();
-		mockDeliveryDate.setDate(TestUtils.convertLocalDateToDate(LocalDate.now()));
-		mockDeliveryDate.setOrderLimit(6);
-		mockDeliveryDate.setId(111l);
-		Mockito.when(deliveryDateService.getDeliveryDate(ArgumentMatchers.any(Long.class))).thenReturn(mockDeliveryDate);
-		Mockito.when(deliveryDateService.isDeliveryDateAvailable(ArgumentMatchers.any(Long.class))).thenReturn(true);
-		
 		OrderDetail mockSavedOrder = mockOrder();
 
 		Mockito.when(orderRepository.save(Mockito.any(OrderDetail.class))).thenReturn(mockSavedOrder);
@@ -124,7 +111,6 @@ class OrderServiceTest {
 		assertEquals(user.getContactNumber(), resultOrder.getUser().getContactNumber());
 		assertEquals(address.getLine1(), resultOrder.getShipping().getAddressLineOne());
 		assertEquals(new BigDecimal("165"), resultOrder.getTotal());
-		assertEquals(mockDeliveryDate, resultOrder.getDeliveryDate());
 	}
 	
 	@Test

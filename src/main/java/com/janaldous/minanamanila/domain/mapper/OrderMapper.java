@@ -15,6 +15,7 @@ public class OrderMapper {
 		output.setShipping(AddressMapper.toEntity(orderDto.getAddress()));
 		output.setDeliveryType(orderDto.getDeliveryType());
 		output.setPaymentType(orderDto.getPaymentType());
+		output.setDeliveryDate(orderDto.getDeliveryDate());
 		
 		return output;
 	}

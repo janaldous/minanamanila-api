@@ -5,23 +5,18 @@ import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-import java.time.LocalDate;
 import java.util.regex.Pattern;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
-import com.janaldous.minanamanila.data.DeliveryDate;
-import com.janaldous.minanamanila.data.DeliveryDateRepository;
 import com.janaldous.minanamanila.data.OrderStatus;
 import com.janaldous.minanamanila.testutil.OrderDtoMockFactory;
-import com.janaldous.minanamanila.testutil.TestUtils;
 import com.janaldous.minanamanila.webfacade.dto.OrderConfirmation;
 import com.janaldous.minanamanila.webfacade.dto.OrderDto;
 
@@ -35,31 +30,13 @@ public class OrderApiE2E {
 	@Value("${local.server.port}")
 	private int localServerPort;
 
-	@Autowired
-	private DeliveryDateRepository deliveryDateRepository;
-
-	private boolean isDBInitialized = false;
-
 	@BeforeEach
 	public void setup() {
 		RestAssured.baseURI = "http://localhost";
 		RestAssured.port = localServerPort;
 
-		intializeDb();
 	}
 
-	private void intializeDb() {
-		if (!isDBInitialized) {
-			for (int i = 0; i < 3; i++) {
-				DeliveryDate deliveryDate = new DeliveryDate();
-				deliveryDate.setDate(TestUtils.convertLocalDateToDate(LocalDate.now().plusDays(i)));
-				deliveryDate.setOrderLimit(2);
-				deliveryDateRepository.save(deliveryDate);
-			}
-			isDBInitialized = true;
-		}
-	}
-	
 	@Test
 	public void testGetOrdersWithoutAuthentication() {
 		get("/admin/order")
@@ -85,11 +62,8 @@ public class OrderApiE2E {
 		assertTrue(
 				Pattern.compile("^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}.\\d{3}$").matcher(deliveryDateStr).find());
 
-		DeliveryDate deliveryDate = deliveryListResult.getObject("[0]", DeliveryDate.class);
-
 		// create order
 		OrderDto orderDto = OrderDtoMockFactory.factory();
-		orderDto.setDeliveryDateId(deliveryDate.getId());
 
 		OrderConfirmation result = given().contentType(MediaType.APPLICATION_JSON_VALUE.toString()).body(orderDto)
 				.when().post("/api/order").then().statusCode(HttpStatus.CREATED.value())

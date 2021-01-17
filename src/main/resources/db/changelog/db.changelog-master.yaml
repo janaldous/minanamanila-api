@@ -605,3 +605,27 @@ databaseChangeLog:
 - include:
     file: "scripts/colors.sql"
     relativeToChangelogFile: true
+- changeSet:
+    id: change-order-detail-1
+    author: janaldous
+    changes:
+    - dropColumn:
+       tableName: order_detail
+       columnName: delivery_date
+- changeSet:
+    id: change-order-detail-2
+    author: janaldous
+    changes:
+    - addColumn:
+       tableName: order_detail
+       columns:
+       - column:
+          name: delivery_date
+          type: datetime
+- changeSet:
+    id: change-order-detail-3
+    author: janaldous
+    changes:
+    - dropTable:
+       tableName: delivery_date
+       cascadeConstraints: true
