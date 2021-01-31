@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,10 +24,12 @@ import com.janaldous.minanamanila.webfacade.dto.OrderDto;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import lombok.extern.slf4j.Slf4j;
 
 @Api
 @RestController
 @RequestMapping("/api")
+@Slf4j
 public class PublicController {
 
 	@Autowired
@@ -34,22 +37,26 @@ public class PublicController {
 
 	@Autowired
 	private ProductService productService;
-	
+
 	@PostMapping("/order")
 	public @ResponseBody ResponseEntity<OrderConfirmation> order(@Valid @RequestBody OrderDto orderDto) {
 		return new ResponseEntity<OrderConfirmation>(orderService.order(orderDto), HttpStatus.CREATED);
 	}
 
 	@GetMapping("/products")
-	public @ResponseBody Page<Product> getProducts(@RequestParam("page") int page, @RequestParam("size") int size) {
+	public @ResponseBody Page<Product> getProducts(Authentication authentication, @RequestParam("page") int page,
+			@RequestParam("size") int size) {
+		if (authentication != null) {
+			String name = authentication.getName();
+			System.out.println(name);
+		}
+
 		return productService.getProducts(page, size);
 	}
 
 	@GetMapping("/products/{id}")
 	public @ResponseBody ResponseEntity<Product> getProduct(@PathVariable Long id) {
-		return productService.getProduct(id)
-				.map(ResponseEntity::ok)
-				.orElseGet(() -> ResponseEntity.notFound().build());
+		return productService.getProduct(id).map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
 	}
 
 	@ApiOperation(value = "Get product suggestions for a particular product")
