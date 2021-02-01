@@ -23,6 +23,9 @@ public class User implements Serializable{
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int id;
 	
+	@Column(name = "auth0_id", unique = true)
+	private String auth0Id;
+	
 	@NotBlank(message = "Please enter first name!")
 	@Column(name = "first_name")
 	private String firstName;

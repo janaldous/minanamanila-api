@@ -13,6 +13,7 @@ public class UserMapper {
 		output.setEmail(userDto.getEmail());
 		output.setFirstName(userDto.getFirstName());
 		output.setLastName(userDto.getLastName());
+		output.setAuth0Id(userDto.getAuth0Id());
 		return output;
 	}
 
@@ -24,6 +25,7 @@ public class UserMapper {
 		output.setEmail(input.getEmail());
 		output.setFirstName(input.getFirstName());
 		output.setLastName(input.getLastName());
+		output.setAuth0Id(input.getAuth0Id());
 		
 		return output;
 	}

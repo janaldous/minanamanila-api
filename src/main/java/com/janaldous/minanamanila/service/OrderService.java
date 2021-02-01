@@ -22,6 +22,7 @@ import com.janaldous.minanamanila.data.OrderTracking;
 import com.janaldous.minanamanila.data.OrderTrackingRepository;
 import com.janaldous.minanamanila.data.Product;
 import com.janaldous.minanamanila.data.ProductRepository;
+import com.janaldous.minanamanila.data.User;
 import com.janaldous.minanamanila.data.UserRepository;
 import com.janaldous.minanamanila.domain.mapper.OrderConfirmationMapper;
 import com.janaldous.minanamanila.domain.mapper.OrderItemMapper;
@@ -71,7 +72,12 @@ public class OrderService {
 
 		// save transitive entities
 		addressRepository.save(orderDetail.getShipping());
-		userRepository.save(orderDetail.getUser());
+		List<User> users = userRepository.findByAuth0Id(orderDetail.getUser().getAuth0Id());
+		if (!users.isEmpty()) {
+			orderDetail.setUser(users.get(0));
+		} else {
+			userRepository.save(orderDetail.getUser());
+		}
 
 		// set tracking
 		OrderTracking tracking = new OrderTracking();

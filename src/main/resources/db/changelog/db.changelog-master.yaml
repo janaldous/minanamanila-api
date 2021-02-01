@@ -629,3 +629,12 @@ databaseChangeLog:
     - dropTable:
        tableName: delivery_date
        cascadeConstraints: true
+- changeSet:
+    id: add-column-user-detail
+    author: janaldous
+    changes:
+    - addColumn:
+       tableName: user_detail
+       columns:
+         name: auth0_id
+         type: VARCHAR(255)
